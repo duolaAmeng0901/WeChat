@@ -1,0 +1,26 @@
+//rc linux缩写 run command 运行时会来调用的命令
+//babel6的配置
+//babel-core babel的核心 API
+{
+  //babel的预设，babel-preset-env
+  "preserts": [
+    [
+      "env",
+      {
+        //环境
+        "targets": {
+          //浏览器份额，  ， 不是ie8之下版本
+          "browsers": [" >= 1%", "last 2 versions", "not ie <= 8"]
+        },
+        //module的方式 commonjs umd amd。。。 默认是commonjs
+        "modules": "commonjs"
+      }
+    ],
+    //草案的版本 用来转es6
+    //babel-preset-stage-2
+    "stage-2"
+  ],
+  //按需引入 还有options项暂 需要了解 
+  //babel-plugin-transform-runtime 依赖于 babel-runtime 部分依赖可以不安装
+  "plugins": ["transfrom-runtime"]
+}

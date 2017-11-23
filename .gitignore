@@ -1,0 +1,9 @@
+
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+
+在上传git时忽略的文件或文件夹
+
+能不能忽略自己呢。
